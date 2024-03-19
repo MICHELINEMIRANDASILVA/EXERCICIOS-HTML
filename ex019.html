@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificadores em CSS</title>
+    <style>
+
+    
+    .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    div {
+        display: inline-block; /* exibe uma div ao lado da outra, em linha */
+        width: 200px; /* largura do bloco */
+        height: 200px; /* altura do bloco */
+        background-color: lightgray;
+        border: 1px solid black; /* borda do bloco */
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    div#area01 { /* configurações exclusivas do elemento com ID "area01" */
+        background-color: darkred;
+    }
+
+    #area02 { /* não é necessário colocar o nome da tag, basta o ID */
+        background-color: darkolivegreen;
+    }
+
+    div#area03, div#area05{ /* podemos atribuir propriedades a mais de um elemento */
+        background-color: darkblue;
+    }
+
+    body {
+        background: rgb(253,29,29);
+        background: linear-gradient(90deg, rgb(238, 89, 89) 32%, rgba(252,176,69,1) 100%);
+    }
+
+    p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1 class="kanit-bold">Identificadores em CSS</h1>
+    <p>No exercício anterior, vimos as <mark>classes</mark> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <mark>identificar</mark> os elementos, dando um 'nome' específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></p>
+
+    <div id="area01"></div>
+    <div id="area02"></div>
+    <div id="area03"></div>
+    <div id="area04"></div>
+    <div id="area05"></div>
+</body>
+</html>
